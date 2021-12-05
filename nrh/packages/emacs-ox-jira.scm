@@ -1,8 +1,9 @@
-(define-module (nrh packages emacs-ox-jira)
+(define-module (nrh packages emacs-ox)
   #:use-module (guix packages)
   #:use-module (guix git-download)
   #:use-module (guix build-system emacs)
-  #:use-module (guix licenses)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages emacs-xyz))
   (define-public emacs-ox-jira
     ;;(use-modules (guix packages)
     ;;             (guix git-download)
@@ -33,4 +34,4 @@ and export it as a JIRA buffer. I usually use `C-x h' to mark the whole
 buffer, then `M-w' to save it to the kill ring (and global pasteboard) for
 pasting into JIRA issues.
 ")
-     (license public-domain))))
+     (license license:public-domain)))

@@ -17,7 +17,7 @@
     (origin
      (method git-fetch)
      (uri (git-reference
-           (url "https://github.com/nrhuff/lisp-web.git")
+           (url "https://github.com/nhuff/lisp-web.git")
            (commit version)))
      (sha256 (base32 "02z8hx6h8zqyvb857gq7ay33yjvigjcaji4j7p7zvaj73nhyz8lf"))
      (file-name (git-file-name name version))))

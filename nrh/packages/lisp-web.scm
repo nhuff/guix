@@ -27,7 +27,7 @@
    (inputs `(("bordeaux-threads" ,sbcl-bordeaux-threads)
              ("hunchentoot" ,sbcl-hunchentoot)))
    (build-system asdf-build-system/sbcl)
-   (arguments '(#:asd-system '("webdemo")
+   (arguments '(#:asd-systems '("webdemo")
                 #:phases
                 (modify-phases %standard-phases
                                (add-after 'create-asdf-configuration 'build-program
